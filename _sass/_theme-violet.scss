@@ -1,0 +1,25 @@
+// Violet theme
+
+// Color variables
+$violet: #863C83;
+$black: #2F2323;
+$white: #fff;
+
+// Config
+$color-background: $violet !default;
+$color-dot-accent: $black !default;
+$color-foreground: $white !default;
+$color-title: $white !default;
+$color-body-text: $black !default;
+$color-text-accent: $violet !default;
+$color-code: $violet !default;
+$color-nav-link: $black !default;
+$color-primary-link: $violet !default;
+
+// Import sass partials (used in all themes)
+@import
+        "variables",
+        "base",
+        "components",
+        "utilities"
+;
