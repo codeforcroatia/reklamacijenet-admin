@@ -2,7 +2,7 @@
 layout: category-post
 title:  "Prijava o zaprimanju spama u predmetu"
 date:   2017-09-16 00:00:00 -0400
-categories: template
+categories: "template"
 ---
 Kada korisnik prijavi da je neželjena poruka pristigla u postojeći predmet, a ako je predmet već riješen, potrebno je ukloniti neželjenu poruku i spriječiti dolazak novih neželjenih poruka.
 
