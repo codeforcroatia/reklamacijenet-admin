@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Reklamacije.net Admin
-description: A bold typographic theme inspired by Swiss design.
+description: Stranice namjenjene za administratore Alaveteli portala.
 baseurl: "/reklamacijenet-admin" # the subpath of your site, e.g. /blog
 url: "http://codeforcroatia.github.io" # the base hostname & protocol for your site
 github_repo: reklamacijenet-admin # the GitHub repo name for your project
