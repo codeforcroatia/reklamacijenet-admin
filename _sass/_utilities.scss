@@ -181,3 +181,15 @@
     text-decoration: none;
   }
 }
+
+// Link styles for header bar navigation
+.link-primary-header {
+  color: $color-foreground;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-body-text;
+    text-decoration: none;
+  }
+}
