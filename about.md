@@ -18,7 +18,7 @@ Održavanje portala se može razdvojiti na [redovno održavanje][maintenance] i 
 
 Za usporedbu, pokazati ću na primjeru manjeg domaćeg portala i velikog inozemnog portala. U nekom nasumce tjednu u prosincu 2010. godine team podrške **na velikom inozemnom portalu** za pristup informacijama u Velikoj Britaniji imali su **66 različitih događaja** koji su se sastojali od *44 podrške korisnicima putem emaila* i *22 zadataka u redovnim održavanjima*. Na **manjem domaćem portalu** za pravo na pristup informacijama, u jednom tjednu u rujnu 2015. godine team podrške imao je **14 događaja** koji su se sastojali od *6 podrške korisnicima pisanim putem* (e-mail ili komentar putem portala) i *8 zadataka iz redovnog održavanja*.
 
-Većina pisane korisničke podrške ne zahtijeva mnogo vremena jer se slučajevi ponavljaju i moguće je koristiti predloške za odgovor; ali neki - oni koji su zakonski uvjetovani - ipak zahtijevaju da se uloži vrijeme u istraživanje i raspravu kako bi se pronašao adekvatan odgovor. Redovna održavanja su jednostavnija, no za neke treba imati dodatnog znanja (npr. kada treba interpretirati grešku nedostavljenog emaila, tzv. *mailer daemon*)
+Većina pisane korisničke podrške ne zahtijeva mnogo vremena jer se slučajevi ponavljaju i moguće je koristiti predloške za odgovor; ali neki - oni koji su zakonski uvjetovani - ipak zahtijevaju da se uloži vrijeme u istraživanje i raspravu kako bi se pronašao adekvatan odgovor. Redovna održavanja su jednostavnija, no za neke treba imati dodatnog znanja (npr. kada treba interpretirati grešku nedostavljenog emaila, tzv. *mailer daemon*).
 
 Tjedni zadaci mogu uključivati:
 
