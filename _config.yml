@@ -25,6 +25,9 @@ github_username: codeforcroatia
 social_link: twitter
 social_username: codeforcroatia
 
+# custom social link Facebook
+social_fb_username: kodirajzahrvatsku
+
 # Set theme color here
 # Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow; violet (custom).
 theme_color: violet
