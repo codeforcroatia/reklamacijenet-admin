@@ -1,51 +1,29 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: O priručniku
+permalink: /opcenito/
 ---
 
-Swiss is a bold Jekyll theme inspired by Swiss design and the works of Massimo Vignelli. This theme lends itself well to sites heavy on written content.
+Ovaj priručnik namjenjen je za administratore i moderatore portala Reklmacije.net kojeg pokreće platforma Alaveteli. Nastavi čitati ako si administrator portala.
 
-### Features:
+### Priručnik za administratore i moderatore
+Ovaj priručnik podrobnije će objasniti kako se administrira portal, što možeš očekivati i kakve probleme možeš otkriti. Također uključuje primjere dobre prakse iz drugih projekata i drugih zemalja.
+
 * Mobile-first design ensures this theme performs fastest on mobile while scaling elegantly to desktop-size screens.
 * Designed for blogs and sites heavy on written content, with bold typography styles, homepage summaries, and previous/next snippets.
 * Supports a wide range of HTML elements and markdown.
 * Flexible styles that can be reused for customization without adding additional CSS.
 * Dynamically generated navigation links. See docs below for adding pages with specific post category for-loops.
 
-## Themes
-This theme comes in eight different color variations. The default is set to the `black` theme. To change the theme color, add `theme_color:` to your `config.yml` file with the color you wish to use. Example: `theme_color: blue`.
+## Što uključuje održavanje
+Ima mnogo općenitih zadataka koji su uključeni u administratorskim dužnostima. Richard, volonter Alaveteli portala za pravo na pristup informacijama u Velikoj Britaniji WhatDoTheyKnow, napisao je [priču na blogu][richard-blog-2009] o tome u 2009. godini.
 
-| Config setting | Thumbnail |
-| --- | --- |
-| `theme_color: black` | <img width="330" alt="black" src="https://cloud.githubusercontent.com/assets/334891/18476835/8d70b330-7999-11e6-8c84-a558906d636e.png"> |
-| `theme_color: red` | <img width="330" alt="red" src="https://cloud.githubusercontent.com/assets/334891/18477185/c53af09a-799a-11e6-9354-b9bf1a7f1826.png"> |
-| `theme_color: white` | <img width="330" alt="white" src="https://cloud.githubusercontent.com/assets/334891/18477206/d9dc55fc-799a-11e6-89f2-b4ae150caa80.png"> |
-| `theme_color: gray` | <img width="330" alt="gray" src="https://cloud.githubusercontent.com/assets/334891/18477058/4e61700c-799a-11e6-80a0-805e57f2563e.png"> |
-| `theme_color: blue` | <img width="330" alt="blue" src="https://cloud.githubusercontent.com/assets/334891/18477240/f03646d2-799a-11e6-8895-25b37d3a1438.png"> |
-| `theme_color: magenta` | <img width="330" alt="magenta" src="https://cloud.githubusercontent.com/assets/334891/18477252/fb2f5128-799a-11e6-8c8f-e79d9c1884b7.png"> |
-| `theme_color: orange` | <img width="330" alt="orange" src="https://cloud.githubusercontent.com/assets/334891/18477265/06e302bc-799b-11e6-970e-6461b2a89c57.png"> |
-| `theme_color: yellow` | <img width="330" alt="yellow" src="https://cloud.githubusercontent.com/assets/334891/18477278/117347aa-799b-11e6-83a8-f82341c143e0.png"> |
+Ovakve portale održavaju volonteri, poput mene i tebe, koji povremeno izdvajaju dio svog slobodnog vremena da poprave sitne stvari prije nego se nagomila jako puno sitnih stvari za popravak koje će otežati rad portala. Na drugim ovakvim projektima je obično 3 aktivna administratora koji redovno prate promjene na portalu, uz dodatnu pomoć manje aktivnih moderatora koji povremeno pomognu.
+
+Održavanje portala se može razdvojiti na [redovno održavanje][maintenance] i [korisničku podršku][user-support]. Granica između ta dva zadatka ponekad može biti vrlo tanka; ali glavna razlika je da se prvo radi preko administratorskog internetskog sučelja portala, a ovo zadnje se radi pisano putem elektoronske komunikacije direktno s krajnjim korisnicima, npr. e-mailom ili preko službenog foruma (ali nekada uključuje i komunikaciju preko direktnih poruka ili komentara na portalu).
 
 
-## Installation
 
-Add this line to your Jekyll site's Gemfile:
-
-```ruby
-gem "jekyll-swiss"
-```
-
-And add this line to your Jekyll site `config.yml`:
-
-```yaml
-theme: jekyll-swiss
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-swiss
+[richard-blog-2009]:    https://www.mysociety.org/2009/10/13/behind-whatdotheyknow/
+[maintenance]:          #
+[user-support]:         #
