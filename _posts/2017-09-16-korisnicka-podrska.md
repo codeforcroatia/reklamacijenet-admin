@@ -47,11 +47,11 @@ Pošiljatelj poruke će ponekada tvrditi da u njihovim odgovorima ima materijala
 
 ```
 
-### Osobni podaci
+## Osobni podaci
 
 Ovo uključuje sve od slučajno otkrivenih osobnih podataka poput informacija koje mogu identificirati neku fizičku osobu do imena korisnika stranice koji kasnije dobije "Google remorse."
 
-## Akcija
+### Akcija
 
 * procijeni predmet, uz referencu na Zakon o zaštiti osobnih podataka; nemoj automatski pretpostaviti da nešto treba sakriti, procijeni štetu načinjenu osobi koja je predmet osobnih podataka; imaj na umu da osjetljivi osobni podaci zahtijevaju brzu akciju i uklanjanje
 * portal smatra da [neke informacije u javnom interesu][take-down] ne treba skrivati
