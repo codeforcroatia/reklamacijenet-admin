@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Reklamacije.net Admin
 description: Stranice namjenjene za administratore Alaveteli portala.
-baseurl: "/reklamacijenet-admin" # the subpath of your site, e.g. /blog
-url: "http://codeforcroatia.github.io" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://admin.reklamacije.net" # the base hostname & protocol for your site
 github_repo: reklamacijenet-admin # the GitHub repo name for your project
 github_username: codeforcroatia
 
