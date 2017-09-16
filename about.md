@@ -40,4 +40,4 @@ Tjedni zadaci mogu uključivati:
 
 [richard-blog-2009]:    https://www.mysociety.org/2009/10/13/behind-whatdotheyknow/
 [maintenance]:          #
-[user-support]:         #
+[user-support]:         /2017/09/16/korisnicka-podrska.html
