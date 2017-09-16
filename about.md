@@ -1,7 +1,7 @@
 ---
 layout: page
 title: O priručniku
-permalink: /opcenito/
+permalink: /prirucnik/
 ---
 
 Ovaj priručnik namjenjen je za administratore i moderatore portala Reklamacije.net kojeg pokreće platforma Alaveteli. Nastavi čitati ako si administrator portala.
