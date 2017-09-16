@@ -39,5 +39,5 @@ Tjedni zadaci mogu uključivati:
 - molba za uklanjanje govora mržnje
 
 [richard-blog-2009]:    https://www.mysociety.org/2009/10/13/behind-whatdotheyknow/
-[maintenance]:          #
+[maintenance]:          /2017/09/17/odrzavanje.html
 [user-support]:         /2017/09/16/korisnicka-podrska.html
