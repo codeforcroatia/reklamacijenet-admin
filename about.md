@@ -6,7 +6,7 @@ permalink: /opcenito/
 
 Ovaj priručnik namjenjen je za administratore i moderatore portala Reklmacije.net kojeg pokreće platforma Alaveteli. Nastavi čitati ako si administrator portala.
 
-### Priručnik za administratore i moderatore
+# Priručnik za administratore i moderatore
 Ovaj priručnik podrobnije će objasniti kako se administrira portal, što možeš očekivati i kakve probleme možeš otkriti. Također uključuje primjere dobre prakse iz drugih projekata i drugih zemalja.
 
 * Mobile-first design ensures this theme performs fastest on mobile while scaling elegantly to desktop-size screens.
@@ -28,7 +28,7 @@ Većina pisane korisničke podrške ne zahtijeva mnogo vremena jer se slučajevi
 
 Tjedni zadaci mogu uključivati:
 
-# Redovna održavanja
+### Redovna održavanja
 - razvrstavanje pogrešno dostavljenih odgovora (tzv. “Holding Pen”)
 - istraživanje nedostavljenih odgovora (npr. pun inbox, spam itd)
 - promjena statusa na predmeta koji nisu klasificirani
@@ -37,7 +37,7 @@ Tjedni zadaci mogu uključivati:
 - dodavanje novih pravnih osoba
 - izmjena kontakt podataka za postojeće javne osobe
 
-# Korisnička podrška
+### Korisnička podrška
 - pogrešno dostavljen e-mail (na team umjesto na pravnu osobu)
 - korisnik treba pomoć pri korištenju portala
 - korisnik koji trebaju savjet vezano uz njihov predmet i zakon
