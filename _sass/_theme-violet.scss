@@ -16,10 +16,6 @@ $color-code: $violet !default;
 $color-nav-link: $black !default;
 $color-primary-link: $violet !default;
 
-a {
-  color: $violet !default;
-}
-
 // Import sass partials (used in all themes)
 @import
         "variables",
