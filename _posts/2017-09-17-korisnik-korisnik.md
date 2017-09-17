@@ -1,7 +1,7 @@
 ---
 layout: category-post
 title:  "Korisnik želi kontaktirati drugog korisnika"
-date:   2017-09-17 00:00:00 -0400
+date:   2017-09-17 00:00:00 -0000
 categories: template
 ---
 
