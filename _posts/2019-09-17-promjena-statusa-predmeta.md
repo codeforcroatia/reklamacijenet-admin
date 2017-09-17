@@ -1,6 +1,6 @@
 ---
 layout: category-post
-title:  "Skrivanje predmeta"
+title:  "Promjena statusa predmeta"
 date:   2017-09-17 00:00:00 -0000
 categories: template
 ---
