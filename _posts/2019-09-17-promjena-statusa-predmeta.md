@@ -5,7 +5,7 @@ date:   2017-09-17 00:00:00 -0000
 categories: template
 ---
 
-Ponekada druge osobe nakon što primjete da status nekog predmeta ne reflektira pravi status nams traže da promjenimo status predmeta:
+Ponekada druge osobe nakon što primjete da status nekog predmeta ne reflektira pravi status traže da promjenimo status predmeta:
 
 1. pregledaj predmet
 2. procjeni treba li mjenjati status (npr. prošlo je više od mjesec dana a podnositelj nije klasificirao predmet)
