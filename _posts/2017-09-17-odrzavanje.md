@@ -47,3 +47,41 @@ Sada kada ste identificirali predmet kojem pripada poruka, vratite se na holding
 
 Ta poruka je sada asocirana s pravilnim predmetom. Više se ne nalazi u holding penu, već se prikazuje ispod pravilnog predmeta na javnom dijelu stranice s predmetom.
 
+### ODBACIVANJE SPAMA KOJI DOLAZI U HOLDING PEN
+
+### Stvaranje, mijenjanje i upload podataka pravnih osoba
+
+Postoje tri načina na koja se mogu promijeniti podaci pravnih osoba:
+
+### STVARANJE, MIJENJANJE I UPLOAD PODATAKA PRAVNIH OSOBA
+
+* *Create* (Kreiranje) — nova pravna osoba se može stvoriti u administrativnom sučelju. Klikni na **Authorities** te zatim na tipku **New Public Authority**
+* *Edit* (Uređivanje) — nakon stvaranja nove pravne osobe, e-mail adresa i drugi podaci se mogu uređivati u administratorskom sučelju. Potrebno je kliknuti na link **Authorities**, pronaći željenu pravnu osobu te kliknuti na **edit**.
+* *Upload* (Slanje) — moguće je kreirati ili urediti više pravnih osoba istovremeno uploadanjem datoteke koja sadrži podatke u vrijednostima koje su međusobno odijeljene zarezom, tj. u CSV formatu. Ovo se može koristiti za stvaranje novih pravnih osoba, ali i za uređivanje već postojećih pravnih osoba. Potrebno je kliknuti na **Authorities** te zatim na tipku **Import from CSV**. Pogledajte ostatak ovog poglavlja priručnika za više detalja vezanih za slanje datoteke.
+
+Mogućnost uploada može biti od velike koristi – posebno prilikom formiranja Alaveteli stranice – jer je čest slučaj da se podaci, poput kontakt podataka pravnih osoba, prikupljaju u tablicama. Mogućnost uploada čini jednostavnim inicijalan upload podataka na stranicu. Također omogućava ažuriranje podataka ukoliko se podaci promijene nakon što su uploadani. 
+
+Kako bi se podaci u tablici iskoristili za ažuriranje pravnih osoba na Reklamacije.net, potrebno ih je izvesti, tj. kliknuti na Export tablice u CSV formatu. Ovo je datoteka koju je kasnije moguće modificirati i uploadati.
+
+Prvi red CSV datoteke treba početi sa znakom # (znak indicira da ovaj red ne sadrži podatke) i mora sadržavati popis stupaca za podatke koji se nalaze u slijedećim redovima. Imena stupaca moraju:
+- biti u prvom redu
+- točno se podudarati sa očekivanim nazivom te sadržavati name i request_email (pogledati tablicu koja se nalazi niže)
+- pojavljivati se u istom redoslijedu kao i pripadajuće stavke u redovima podataka koji slijede
+
+Većina programa za uređivanje tablica će samostalno kreirati CSV datoteku uz pretpostavku da se oprezno specificira točan naziv na vrhu svakog stupca. Potrebno je koristiti nazive točno onako kako su prikazani – ako Alaveteli uoči neprepoznatljivo ime stupca, uvoz podataka neće biti moguć.
+
+| naziv stupca            | i18n sufix?  | napomene                                     |
+|-------------------------|--------------|----------------------------------------------|
+| `name`                  | da           | *Ovaj stupac mora biti prisutan.* Puno ime pravne osobe. Ako se podudara s postojećom pravnom osobom, ta pravna osoba će biti ažurirana — u suprotnom, kreirat će se nova pravna osoba. |
+| `request_email`         | da           | *Ovaj stupac mora biti prisutan, ali može ostati prazan.* E-mail na koji se šalju pritužbe. |
+| `short_name`            | da           | Neke pravne osobe su poznate pod skraćenim imenom. |
+| `notes`                 | da           | Napomene, javno objavljeno (može sadržavati HTML). |
+| `publication_scheme`    | da           | Ne koristi se. |
+| `disclosure_log`        | da           | Ne koristi se. |
+| `home_page`             | da           | URL internetske stranice pravne osobe. |
+| `tag_string`            | ne           | Oznake odvojene razmakom. |
+
+...
+
+
+
