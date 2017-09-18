@@ -53,7 +53,7 @@ Ta poruka je sada asocirana s pravilnim predmetom. Više se ne nalazi u holding 
 
 Postoje tri načina na koja se mogu promijeniti podaci pravnih osoba:
 
-* *Create* (Kreiranje) — nova pravna osoba se može stvoriti u administrativnom sučelju. Klikni na **Authorities** te zatim na tipku **New Public Authority**
+* *Create* (Kreiranje) — nova pravna osoba se može stvoriti u administrativnom sučelju. Klikni na **Authorities** te zatim na tipku **New Public Authority**.
 * *Edit* (Uređivanje) — nakon stvaranja nove pravne osobe, e-mail adresa i drugi podaci se mogu uređivati u administratorskom sučelju. Potrebno je kliknuti na link **Authorities**, pronaći željenu pravnu osobu te kliknuti na **edit**.
 * *Upload* (Slanje) — moguće je kreirati ili urediti više pravnih osoba istovremeno uploadanjem datoteke koja sadrži podatke u vrijednostima koje su međusobno odijeljene zarezom, tj. u CSV formatu. Ovo se može koristiti za stvaranje novih pravnih osoba, ali i za uređivanje već postojećih pravnih osoba. Potrebno je kliknuti na **Authorities** te zatim na tipku **Import from CSV**. Pogledajte ostatak ovog poglavlja priručnika za više detalja vezanih za slanje datoteke.
 
