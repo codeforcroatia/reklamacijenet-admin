@@ -25,8 +25,9 @@ Ukoliko nema odgovora na predmet koji je ponovno poslan pravnoj osobi ili se e-m
 
 ```
 Poštovani,
-E-mailovi poslani s našeg poslužitelja nisu isporučeni primetelju na vašoj strani.
-Bili bi veoma zahvalni kada bi mogli sa svojim informatičkim odjelom provjeriti da e-mailovi primljeni od Reklamacije.net nisu obuhvaćeni anti-spam softwareom.
+e-mail poruke poslane s našeg poslužitelja nisu isporučeni primatelju na vašoj strani.
+
+Bili bi veoma zahvalni kada bi mogli sa svojim informatičkim odjelom provjeriti da e-mailovi primljeni od Reklamacije.net nisu završili u spamu te da postavite ovu domenu u vašu whitelistu.
 
 Lijep pozdrav,
 [tvoje ime], volonter na Reklamacije.net
