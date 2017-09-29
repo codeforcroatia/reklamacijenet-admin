@@ -5,7 +5,7 @@ date:   2017-09-17 00:00:00 -0000
 categories: template
 ---
 
-Za početak, ako je ovo tijelo javne vlasti, treba provjeriti stranicu te pravne osobe na Imamo pravo znati portalu jer je možda i tamo potrebno izmijeniti e-mail adresu.
+Za početak, ako je ovo tijelo javne vlasti, treba [provjeriti stranicu te pravne osobe][1] na [Imamo pravo znati portalu][2] jer je možda i tamo potrebno izmijeniti e-mail adresu.
 
 Nakon promijene e-mail adrese pravne osobe, potrebno je obavijestiti korisnika koji je predložio izmjenu e-mail adrese:
 
@@ -31,3 +31,6 @@ Bili bi veoma zahvalni kada bi mogli sa svojim informatičkim odjelom provjeriti
 Lijep pozdrav,
 [tvoje ime], volonter na Reklamacije.net
 ```
+
+[1]:  https://imamopravoznati.org/body/list/all
+[2]:  https://imamopravoznati.org
