@@ -6,6 +6,15 @@ permalink: /prirucnik/
 
 Ovaj priručnik namjenjen je za administratore i moderatore portala Reklamacije.net kojeg pokreće platforma Alaveteli. Nastavi čitati ako si administrator portala.
 
+**Terminologija**
+
+Ovdje koristimo često sljedeće pojmove:
+- **predmet** je svaki pojedini *thread* na portalu kojeg započinje podnositelj nekog prigovora potrošača, također se zove *request* u administracijskom slučelju; sastoji se od odlaznih poruka, dolaznih poruka i komentara a može ih biti više
+- **odlazna poruka** je svaka poruka koju podnositelj piše za neki predmet, one se šalju pravnoj osobi u obliku e-maila
+- **prigovor** je obično prva odlazna poruka u jednom predmetu; to je poruka u kojoj podnositelj prigovora prvi put iznosi svoju reklamaciju
+- **dolazna poruka** je svaka poruka zaprimljena na Reklamacije.net kao odgovor na bilo koju odlaznu poruku za neki predmet
+- **komentar** je komentar bilo kojeg korisnika na bilo kojem predmetu; oni se ne šalju pravoj osobi
+
 # Priručnik za administratore i moderatore
 Ovaj priručnik podrobnije će objasniti kako se administrira portal, što možeš očekivati i kakve probleme možeš otkriti. Također uključuje primjere dobre prakse iz drugih projekata i drugih zemalja.
 
