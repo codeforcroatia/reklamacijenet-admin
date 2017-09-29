@@ -7,8 +7,7 @@ categories: template
 
 To može biti klevetanje, uvreda, teško sramoćenje, govor protiv časti i ugleda, itd.
 
-U slučaju da korisnik koristi Reklamacije.net radi slanja poruka koje nisu u skladu s pravilima korištenja, potrebno ga je obavijestiti na slijedeći način:
-
+U slučaju da korisnik koristi Reklamacije.net za slanje poruka koje nisu u skladu s pravilima korištenja, potrebno ga je obavijestiti na slijedeći način:
 
 ```
 Dragi ________,
@@ -22,6 +21,8 @@ Vaša poruka ne sadrži elemente prigovora potrošača sukladno Zakonu o zaštit
 Iz navedenih razloga, vaš je predmet sakriven od javnosti iako ju vi i dalje možete vidjeti kada se ulogirate na Reklamacije.net.
 
 Molimo vas da ubuduće izbjegavate korištenje portala Reklamacije.net za slanje ovakvih poruka.
+
+Reklamacije.net zadržava pravo uklanjanja sadržaja koji je suprotan svrsi portala i suprotan uvjetima korištenja te blokiranju korisnika koji ih višestruko prekrše.
 
 Lijep pozdrav,
 [tvoje ime], volonter na Reklamacije.net
