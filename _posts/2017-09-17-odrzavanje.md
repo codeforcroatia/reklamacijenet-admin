@@ -63,7 +63,7 @@ Kako bi se podaci u tablici iskoristili za ažuriranje pravnih osoba na Reklamac
 
 Prvi red CSV datoteke treba početi sa znakom # (znak indicira da ovaj red ne sadrži podatke) i mora sadržavati popis stupaca za podatke koji se nalaze u slijedećim redovima. Imena stupaca moraju:
 - biti u prvom redu
-- točno se podudarati sa očekivanim nazivom te sadržavati name i request_email (pogledati tablicu koja se nalazi niže)
+- točno se podudarati sa očekivanim nazivom te sadržavati name i `request_email` (pogledati tablicu koja se nalazi niže)
 - pojavljivati se u istom redoslijedu kao i pripadajuće stavke u redovima podataka koji slijede
 
 Većina programa za uređivanje tablica će samostalno kreirati CSV datoteku uz pretpostavku da se oprezno specificira točan naziv na vrhu svakog stupca. Potrebno je koristiti nazive točno onako kako su prikazani – ako Alaveteli uoči neprepoznatljivo ime stupca, uvoz podataka neće biti moguć.
@@ -79,7 +79,37 @@ Većina programa za uređivanje tablica će samostalno kreirati CSV datoteku uz 
 | `home_page`             | da           | URL internetske stranice pravne osobe. |
 | `tag_string`            | ne           | Oznake odvojene razmakom. |
 
-...
+Da pojasnimo:
+- Postojeće pravne osobe se ne mogu preimenovati uploadanjem: ako trebate to učiniti, koristite administracijsko sučelje radi uređivanja postojećih podataka i promijenite ime pravne osobe u internetskom sučelju.
+- Kada pravna osoba već postoji odnosno polje `name` se potpuno podudara s nazivom postojeće pravne osobe, i ako je neko polje prazno, import će ostaviti postojeću vrijednost tog polja nepromijenjenom — odnosno, ti podaci na stranici se neće promijeniti. To znači da je potrebno uključiti samo podatke koje želite ažurirati.
+- Stupac `i18n suffix` može prihvatiti internacionalna imena. Dodajte točku te zatim jezični kod, na primjer: `name.hr` za hrvatski jezik (hr). Ovo mora biti regija koja je definirana u popisu mogućih jezika u konfiguraciji aplikacije. Ako ne specificirate i18n suffix, zadani jezik za Reklamacije.net će biti pretpostavljen na zadanu vrijednost.
+- Možete specificirati prazan unos u CSV datoteci tako da ne stavljate znakove između zareza.
+- Ako unos sadrži zarez, stavite ga u dvostruke navodnike kao u nastavku: `"Comma, Inc"`.
+- Ako unos sadrži dvostruke navodnike, svaki od njih morate zamijeniti sa dva navodnika (dakle, `"` postaje `""`) te staviti cijeli unos u dvostruke navodnike: `"U ""navodnicima"""` (bit će uvezeno kao `U "navodnicima"`).
 
+Na primjer, niže su navedeni podaci u CSV formatu, spremni za upload, za tri pravne osobe. Prvi red uvijek definira imena stupaca. Slijedeća tri reda sadrže podatke (jedan red za svaku pravnu osobu):
 
+```
+#name,short_name,short_name.es,request_email,notes
+XYZ Library Inc.,XYZ Library,XYX Biblioteca,info@xyz.example.com,
+Ejemplo Town Council,,Ayuntamiento de Ejemplo,etc@example.com,Lorem ipsum.
+"Comma, Inc.",Comma,,comma@example.com,"e.g. <a href=""x"">link</a>"
+```
 
+Imajte na umu da ako "Ejemplo Town Council" već postoji na stranici, prazan unos u polju `short_name` će ostaviti postojeću vrijednost za taj stupac nepromijenjenom.
+
+Ukoliko želite uploadati CSV datoteku, potrebno je ulogirati se u administrativno sučelje i kliknuti na **Authorities** te potom na **Import from CSV file** i izabrati pripremljenu datoteku.
+
+Specificirajte **What to do with existing tags?** s jednom od slijedećih opcija:
+- *zamijeni postojeće oznake novima* - Za svaku pravnu osobu koju se ažurira, sve postojeće oznake će biti maknute i zamijenjene novima iz CSV datoteke
+- *dodaj nove oznake postojećima* - Postojeće oznake će ostati nepromijenjene, a oznake iz CSV datoteke će biti nadodane.
+  
+Možete dodati **Tag to add entries to / alter entries for**. Ta oznaka će biti primijenjena na svaku pravnu osobu koja se uvozi iz CSV datoteke.
+
+Predlažemo da prvo kliknete na probno pokretanje **Dry run** - ono će proći kroz datoteku i prikazati promijene koje će napraviti u bazi podataka, bez promijene podataka. Provjerite izvještaj: on prikazuje do kojih promjena bi došlo da su podaci zaista učitani nakon čega slijedi poruka:
+
+`Dry run was successful, real run would do as above.`
+
+Ukoliko ne vidite ništa iznad tog reda, to znači da probno pokretanje nije uzrokovalo predložene promijene. 
+
+Ukoliko je sve bilo OK prilikom probnog pokretanja, kliknite **Upload**. Ovo će ponoviti proces, ali ovaj put će napraviti promijene u bazi podataka stranice. Ako uočite grešku poput `invalid email`, moguće da je e-mail adresa krivo unesena ili (vjerojatnije) da CSV datoteka ne sadrži stupac `request_email`.
