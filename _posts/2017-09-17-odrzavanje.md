@@ -227,7 +227,39 @@ Kada pristupite administracijskom sučelju poruke, možete je obrisati korišten
 
 > Koristite s oprezom!
 
+### Uređivanje poslane poruke
 
+U nekim slučajevima je potrebno urediti poslanu poruku. Primjerice, ako je korisnik u nju slučajno uključio privatne informacije koje ne želi javno objaviti na stranici. Možete slijediti jedan od **admin** linkova sa javne stranice predmeta ili pronaći predmet u administracijskom sučelju putem izbornika **Requests**. Spustite se do sekcije "Outgoing Messages" i kliknite **Edit**. Na slijedećoj stranici možete urediti poruku te snimiti nastale promjene. Izmijenjena verzija će se pojaviti na Alaveteli stranici, a neizmijenjena verzija je već poslana pravnoj osobi.
+
+### Uređivanje ili skrivanje komentara
+	
+Komentari su jednostavniji od prigovora ili poruka jer postoje samo na stranici predmeta, tj. nisu poslani nigdje. Ako predmet ima komentare, oni će biti prikazani u administracijskom sučelju tog predmeta. Spustite se niže na stranici do popisa komentara, a svaki pojedini komentar možete uređivati klikom na njegov naslov.
+
+Predlažemo da vaše promijene učinite eksplicitnima. Primjerice, ako uklanjate osobne podatke, umjesto da ih samo obrišete, radije ih zamijenite sa nečim što indicira što je uklonjeno: `[uklonjena je osobna informacija]`.
+
+Kad god je moguće, trebate naznačiti što je uklonjeno i, ako je potrebno obrazloženje, zašto je to trebalo biti sakriveno.
+
+Možete sakriti (ili otkriti) komentar odabirom odgovarajuće stavke, pod nazivom **Visible**, iz drop-down liste. Nakon što ste završili sa promjenama, kliknite **Save**.
+
+Također je moguće sakriti (ili otkriti) komentare u skupnim predmetima. Spustite se na donji dio stranice do popisa komentara u administracijskom sučelju predmeta i označite kućice za one komentare koje želite izmijeniti. Zatim kliknite **Hide selected** ili **Unhide selected**.
+
+### Skrivanje određenog teksta iz predmeta upotrebom cenzure
+
+Cenzuriranje se može odnositi na predmet ili na korisnika. Ta pravila definiraju dijelove teksta koji će se odstraniti iz predmeta i svih povezanih datoteka, npr. prilozi u primljenim porukama; ili iz svih predmeta povezanih s određenim korisnikom, te tekst koji zamijenjuje cenzurirani dio teksta.
+
+U binarnoj datoteci, tekst koji zamjenjuje cenzurirani tekst će uvijek biti niz znakova ‘x’ koji su duljinom identični tekstu koji zamjenjuju kako bi se očuvala duljina datoteke. Cenzuriranje datoteka ne radi konzistentno jer je teško napraviti cenzuru koje će se u potpunosti poklapati sa sadržajem priložene datotetke stoga uvijek provjerite rezultate. Cenzurirajte stvarni tekst i označite kućicu **View as HTML**; ovo je trenutačno (rujan, 2013.) generirana forma necenzuriranog PDF-a ili druge binarne datoteke.
+
+Možete cenzurirati korištenjem redovnih izraza (RegEx - regular expressions) označavanjem kućice **Is it regexp replacement?** u admnistracijskom sučelju za cenzuriranje. U suprotnom će se doslovno samo zamijeniti bilo koje pojavljivanje unesenog teksta.
+
+Poput cenzura koje se temelje na običnom tekstu, cenzura za redovne RegEx izraze će biti prepisana binarnim datotekama koje su povezane sa predmetom. Stoga, redovni RegEx izraz koji je prilično slab u odnosu na ono sa čime se treba slagati, može imati neočekivane posljedice ako se također preklapa sa slijedom znakova u binarnoj datoteci. Također, kompleksni ili slabi redovni izrazi mogu biti vrlo zahtjevni za korištenje (u nekim slučajevima mogu otežati cijelo korištenje aplikacije), stoga:
+- ograničite RegEx primjenu na slučajeve koji se inače ne mogu lako pokriti
+- neka budu što jednostavniji i konkretniji.
+
+Kako bi cenzurirali dio prigovora, potrebno je pristupiti administracijskom sučelju predmeta, otići na dno stranice te kliknuti na gumb **New censor rule (for this request only)**. Na slijedećoj stranici unesite tekst koji želite zamijeniti, npr. "određena privatna informacija," tekst s kojim privatnu informaciju želite zamijeniti, npr. `[osobna informacija]` te je potrebno dodati komentar kako bi drugi administratori znali zašto je informacija sakrivena.
+
+Za dodavanje cenzure korisniku, kako bi se cenzura odnosila na svaki predmet koji korisnik napravi, pristupite stranici korisnika preko administracijskog sučelja. Stranici korisnika možete pristupiti klikom na **Users** na administracijskom izborniku te pronalaskom željenog korisnika ili preko administratorskog linka za odabranog korisnika sa javnog sučelja.
+
+Kada se nalazite u administracijskom sučelju korisnika, na dnu stranice kliknite na gumb **New censor rule**. Na slijedećoj stranici unesite tekst koji želite zamijeniti, npr. "moje pravo ime je Bruce Wayne," tekst s kojim želite zamijeniti privatnu informaciju, npr. `[osobna informacija]` te je potrebno dodati komentar kako bi drugi administratori znali zašto je informacija sakrivena.
 
 [1]: skrivanje templatea
 [2]: brisanje predmeta
