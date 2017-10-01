@@ -1,5 +1,7 @@
 # :construction: WIP :construction: Swiss Jekyll Theme
 
+Jekyll theme inspired by Swiss design http://broccolini.net/swiss/
+
 Swiss is a bold Jekyll theme inspired by Swiss design and the works of Massimo Vignelli. This theme lends itself well to sites heavy on written content.
 
 ### Features:
