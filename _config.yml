@@ -34,3 +34,9 @@ theme_color: violet
 
 # Build settings
 markdown: kramdown
+
+# Site analytics
+analytics:
+  provider: google
+  google:
+    id: UA-2846894-3
