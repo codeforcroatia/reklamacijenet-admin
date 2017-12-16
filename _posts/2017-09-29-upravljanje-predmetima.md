@@ -38,23 +38,10 @@ Za mjenjanje bilo kojih postavki predmeta, idite u administracijsko sučelje, kl
 
 | Što možeš mijenjati                 | Detalji |
 | ----------------------------------- | ------- |
-| Naslov                              | Naslov predmeta je prikazan na stranici predmeta, ali isto se koristi u URL-u (URL je tekst naslova s malim slovima, točke su uklonjene i ako je potrebno dodaje se broj za razlikovanje ako postoji više istih naslova - to zovemo "slug"). 
-Zapamtite da mjenjanje naslova mjenja i URL, a zato jer se slug mjenja - stari URL više neće raditi i posjetitelji koji će koristiti stari URL dobiti će 404 grešku (nije pronađeno). |
-| Tko može vidjeti?                   | Promijenite **Prominence** (vidljivost) postavku na jednu od sljedećih:
-- `normal`
-- `backpage`: predmet je vidljiv svima putem URL-a, ali neće biti prikazan na popisu ili na rezultatima pretrage
-- `requester_only`: predmet je vidljiv samo osobi koja je napisala predmet
-- `hidden`: predmet se ne prikazuje nikome, vidljiv je samo ulogiranim administratorima |
-| Tko može odgovoriti?                | Postavka **Allow new responses from** (dozvoli nove odgovore od) može biti:
-- `anybody`
-- `authority_only`: odgovori su dozvoljeni ali samo ako dolaze od iste pravne osobe kojima je poslan predmet tj. od domene s koje je odgovor već ranije bio zaprimljen
-- `nobody`: ničiji odgocori neće biti prihvaćeni za ovaj predmet
-Bilo koji odgovor od pošiljatelja koji je odbijen ovom postavkom biti će odbačen (vidi sljedeće). 
-Ova postavka se može promijeniti automatski kada je predmeti zastare. |
-| Što se dogodi odbačenim odgovorima? | Postavka **Handle rejected responses** (rukovanje odbačenim odgovorima) određuje što će se dogoditi odgovorima koji nisu dozvoljeni (vidi u prethodi opis):
-- `bounce`: odgovori su vraćeni natrag pošiljatelju
-- `holding pen`: odgovori se svrstavaju u holding pen kako bi ih administratori mogli pregledati
-- `blackhole`: odgovori se uništavaju slanjem u "crnu rupu" |
+| Naslov                              | Naslov predmeta je prikazan na stranici predmeta, ali isto se koristi u URL-u (URL je tekst naslova s malim slovima, točke su uklonjene i ako je potrebno dodaje se broj za razlikovanje ako postoji više istih naslova - to zovemo "slug").<br>Zapamtite da mjenjanje naslova mjenja i URL, a zato jer se slug mjenja - stari URL više neće raditi i posjetitelji koji će koristiti stari URL dobiti će 404 grešku (nije pronađeno). |
+| Tko može vidjeti?                   | Promijenite **Prominence** (vidljivost) postavku na jednu od sljedećih:<br>- `normal`<br>- `backpage`: predmet je vidljiv svima putem URL-a, ali neće biti prikazan na popisu ili na rezultatima pretrage<br>- `requester_only`: predmet je vidljiv samo osobi koja je napisala predmet<br>- `hidden`: predmet se ne prikazuje nikome, vidljiv je samo ulogiranim administratorima |
+| Tko može odgovoriti?                | Postavka **Allow new responses from** (dozvoli nove odgovore od) može biti:<br>- `anybody`<br>- `authority_only`: odgovori su dozvoljeni ali samo ako dolaze od iste pravne osobe kojima je poslan predmet tj. od domene s koje je odgovor već ranije bio zaprimljen<br>- `nobody`: ničiji odgocori neće biti prihvaćeni za ovaj predmet<br>Bilo koji odgovor od pošiljatelja koji je odbijen ovom postavkom biti će odbačen (vidi sljedeće).<br>Ova postavka se može promijeniti automatski kada je predmeti zastare. |
+| Što se dogodi odbačenim odgovorima? | Postavka **Handle rejected responses** (rukovanje odbačenim odgovorima) određuje što će se dogoditi odgovorima koji nisu dozvoljeni (vidi u prethodi opis):<br>- `bounce`: odgovori su vraćeni natrag pošiljatelju<br>- `holding pen`: odgovori se svrstavaju u holding pen kako bi ih administratori mogli pregledati<br>- `blackhole`: odgovori se uništavaju slanjem u "crnu rupu" |
 | U kojem je statusu?                 | are neat      |
 | Jesu li komentari dozvoljeni?       | are neat      |
 | Tagovi (ključne riječi za pretragu) | are neat      |
