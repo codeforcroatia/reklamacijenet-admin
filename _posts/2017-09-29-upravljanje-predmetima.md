@@ -4,59 +4,62 @@ title:  "Upravljanje predmetima"
 date:   2017-09-29
 ---
 
-Alaveteli makes it easy for a user to make a request. As an administrator, there are some things about that request you can change once it’s been created.
+Alaveteli olakšava korisnicima u slanju pisanih predmeta - prigovora. Ti kao administrator trebaš znati nekoliko stvari koje možeš raditi s poslanim predmetom. 
 
-A request is automatically created when a user submits and (where necessary) confirms it. Alaveteli sends it to the authority responsible and handles any responses. Usually this process runs without needing any intervention from an administrator. But sometimes you’ll want to change some aspect of the request, or the way Alaveteli is handling it.
+Predmet se kreira automatski kada korisnik podnese (i kada je potrebno) potvrdi slanje predmeta. Alaveteli ga tada šalje na email adresu odgovorne pravne osobe i rukuje zaprimljene odgovore po predmetu. Taj se postupak odvija bez bilo kakve intervencije administratora, ali ponekada ćeš trebati izmijeniti neke dijelove predmeta, odnosno izmijeniti način na koji će Alaveteli rukovati njime.
 
-What state is the request in?#
+# U kojem je statusu predmet?
 
-Every request moves through a series of states, indicating its progress. Usually a new request will be in the waiting_response state until something happens to change that — for example, a response is received.
+Svaki predmet prolazi kroz niz promjena stanja koja pokazuju njegov napredak kroz vrijeme. Uobičajeno će novi predmet biti u `waiting_response` (čeka odgovor) statusu dok se nešto ne dogodi što će utjecati na promjenu statusa, na primjer kada predmet zaprimi novi odgovor.
 
-However, states can’t always be set automatically, because they require a decision to be made on what kind of answer the authority provided in the response. For states like this, Alaveteli invites the original requester to describe it — for example, when a response is received they can change the state to successful, partially_successful or not_held (if the authority replied to say they don’t have the information requested).
+Ipak, status se ne može uvijek prepoznati automatski zato jer je potrebno donijeti odluku o odgovoru koje je tijelo dostavilo za pojedini predmet. Za takve statuse, Alaveteli poziva podnositelja predmeta da označi status predmeta, na primjer kada stigne odgovor, podnositelj može promijeniti status zahtjeva u `successful` (uspješan), `partially_successful` (djelomično uspješan) ili `not_held` (ne pojeduju informacije - kada odgovorna pravna osoba odgovori da oni ne raspolažu informacijom ili ne mogu pomoći).
 
-If a request has been waiting for over three weeks for the original requester to describe it but has still not been described, Alaveteli lets anyone classify it.
-Internally, Alaveteli does not just record the “described state” of a request, but also notices if anything has happened since it was last described and sets its “awaiting description” status appropriately.
+Ako je predmet čekao više od tri tjedna da ga izvorni podnositelj zahtjeva pregleda i ocijeni status i još nije postavljen status, Alaveteli će dopustiti da bilo koji drugi korisnik pregleda predmet i procijeni u kojem je statusu predmet i postavi status.
 
-Old requests (by default, 6+ months without activity)#
+Kao dio unutarnje obrade zapisa, Alaveteli ne zapisuje samo "opisano stanje" (“described state”) predmeta već također bilježi da li se nešto dogodilo od kada je zadnji put ažuriran i kada se nešto izmjeni postavlja predmet u "čeka ocjenu" (“awaiting description”) status.
 
-If there is no activity on a request for some months (by default six), Alaveteli automatically changes that request’s Allow new responses from… setting to authority_only. Any responses will be rejected unless they are from the authority to which the request was originally made.
+# Zastara predmeta
 
-If a further number of months pass with no activity, that is, by default, if a year has passed without any updates, the request’s Allow new responses from… setting becomes nobody. All responses to this request will be rejected. The request is effectively closed.
+Kada nema aktivnosti na predmetu nekoliko mjeseci (zadano to je postavljeno na šest mjeseci), Alaveteli će automatski promjeniti u tom predmetu "Allow new responses from" (dozvoli nove odgovore od) postavku u `authority_only` (samo izvorna pravna osoba). Bilo koji dolazni email biti će odbačen ako ne dolazi s email adrese pravne osobe kojoj je poslan predmet.
 
-By default, any rejected responses will be bounced with a message that explains that the request has been closed because it is old, with a suggestion that the sender can email your site’s administrators directly.
+Ako prođe još mjeseci bez aktivnosti (zadano to je postavljeno na jednu godinu), tom predmetu "Allow new responses from" (dozvoli nove odgovore od) postavka biti će promjenjena u `nobody` (nitko). Svi odgovori bez obzira s koje adrese dolaze biti će odbačeni. Možemo reći da je taj predmet zatvoren i ne očekuju se više odgovori nakon proteka tolikog vremena neaktivnosti.
 
-You can can stop this behaviour by changing the Allow new responses from… setting back to normal at any time. Alternatively, you can change the way rejected messages are handled (for example, sending such responses to the holding pen instead of bouncing them) with the request’s Handle rejected responses setting.
+Po zadanim postavkama, bilo koji odgovor biti će odbijen s povratnom porukom koja objašnjava da je predmet zatvoren jer je star s prijedlogom da pošiljatelj može direktno kontaktirati administratore.
 
-See changing things about a request below for how to change these settings.
+Administratori mogu izmjeniti ovo ponašanje tako da u metapodacima predmeta izmjene "Allow new responses from" (dozvoli nove odgovore od) postavku natrag u normalnu vrijednost u bilo kojem trenutku. Alternativno, možete izmjeniti kako će Alaveteli rukovati odbačene poruke, u postavci predmeta "Handle rejected responses" (rukovanje odbačenim odgovorima); na primjer slanjem odbačenog odgovora u Holding pen.
 
-You can change the number of months it takes for responses to be restricted, and then rejected, by changing the RESTRICT_NEW_RESPONSES_ON_OLD_REQUESTS_AFTER_MONTHS setting in the config.
+Pogledaj niže više o mjenjanju stvari u predmetu te kako izmjeniti postavke predmeta.
 
-Changing things about a request#
+Administrator sustava (system administrator) može izmjeniti broj mjeseci nakon kojih će predmet biti zabranjeno zaprimanje odgovora kroz postavku `RESTRICT_NEW_RESPONSES_ON_OLD_REQUESTS_AFTER_MONTHS` u konfiguraciji sustava putem Linux terminala.
 
-To change any of these settings, go to the admin interface, click on Requests, then click on the title of the request you want to affect. Click the Edit metadata button.
+# Mjenjanje stvari u predmetu
 
-What you can change	Details
-Title	The title is shown on the request’s page, but is also used in the URL (the text is changed to lower case, punctuation is removed and, if necessary, a number is added for disambiguation — this is called the “slug”).
-Note that changing the title changes the URL, because the slug changes — this means any links to the old URL will no longer work, and will return a 404 (file not found) error.
+Za mjenjanje bilo kojih postavki predmeta, idite u administracijsko sučelje, kliknite na "Requests" (predmeti), zatim kliknite na naslov predmeta kojeg želite mjenjati. Kliknite na "Edit metadata" tipku.
 
-Who can see it?	Change the Prominence setting to one of:
-normal
-backpage: request can be seen by anyone (by visiting its URL, for example) but does not appear in lists, or search results
-requester_only: request only visible to the person who made the request
-hidden: request is never shown (except to administrators)
+| Što možeš mijenjati                 | Detalji |
+| ----------------------------------- | ------- |
+| Naslov                              | Naslov predmeta je prikazan na stranici predmeta, ali isto se koristi u URL-u (URL je tekst naslova s malim slovima, točke su uklonjene i ako je potrebno dodaje se broj za razlikovanje ako postoji više istih naslova - to zovemo "slug"). 
+Zapamtite da mjenjanje naslova mjenja i URL, a zato jer se slug mjenja - stari URL više neće raditi i posjetitelji koji će koristiti stari URL dobiti će 404 grešku (nije pronađeno). |
+| Tko može vidjeti?                   | Promijenite **Prominence** (vidljivost) postavku na jednu od sljedećih:
+- `normal`
+- `backpage`: predmet je vidljiv svima putem URL-a, ali neće biti prikazan na popisu ili na rezultatima pretrage
+- `requester_only`: predmet je vidljiv samo osobi koja je napisala predmet
+- `hidden`: predmet se ne prikazuje nikome, vidljiv je samo ulogiranim administratorima |
+| Tko može odgovoriti?                | Postavka **Allow new responses from** (dozvoli nove odgovore od) može biti:
+- `anybody`
+- `authority_only`: odgovori su dozvoljeni ali samo ako dolaze od iste pravne osobe kojima je poslan predmet tj. od domene s koje je odgovor već ranije bio zaprimljen
+- `nobody`: ničiji odgocori neće biti prihvaćeni za ovaj predmet
+Bilo koji odgovor od pošiljatelja koji je odbijen ovom postavkom biti će odbačen (vidi sljedeće). 
+Ova postavka se može promijeniti automatski kada je predmeti zastare. |
+| Što se dogodi odbačenim odgovorima? | Postavka **Handle rejected responses** (rukovanje odbačenim odgovorima) određuje što će se dogoditi odgovorima koji nisu dozvoljeni (vidi u prethodi opis):
+- `bounce`: odgovori su vraćeni natrag pošiljatelju
+- `holding pen`: odgovori se svrstavaju u holding pen kako bi ih administratori mogli pregledati
+- `blackhole`: odgovori se uništavaju slanjem u "crnu rupu" |
+| U kojem je statusu?                 | are neat      |
+| Jesu li komentari dozvoljeni?       | are neat      |
+| Tagovi (ključne riječi za pretragu) | are neat      |
 
-Who can respond?	The Allow new responses from... setting can be one of:
-anybody
-authority_only: responses are allowed if they come from the authority to which the request was sent, or from any domain from which a a response has already been accepted
-nobody: no responses are allowed on this request
-Any response from a sender who has been disallowed by this setting will be rejected (see next entry).
 
-This setting may change automatically when the request gets old.
-
-What happens to rejected responses?	The Handle rejected responses... setting specificies what happens to responses that are not allowed (see previous entry):
-bounce: responses are sent back to their sender
-holding pen: responses are put in the holding pen for an administrator to deal with
-blackhole: responses are destroyed by being sent to a black hole
 What state is it in?	See more about request states, which can be customised for your installation.
 You can force the state of the request by choosing it explicitly. Change the Described state setting.
 
