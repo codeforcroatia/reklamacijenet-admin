@@ -50,9 +50,9 @@ Za mjenjanje bilo kojih postavki predmeta, idite u administracijsko sučelje, kl
 
 Ako ste ispravili email adresu pravne osobe, možete ponoviti slanje postojećeg predmeta istoj pravnoj osobi na novu email adresu. Ili u drugom slučaju, korisnik je možda poslao predmet krivoj pravnoj osobi. U tom slučaju, možete izmjeniti pravnu osobu na koju je naslovljen predmet i tada ponoviti slanje čime će biti poslano na pravilnog primatelja.
 
-Za ponavljanje slanja predmeta odnosno pojedinačne poruke, idite na administracijsko sučelje, kliknite na **Requests**, tada kliknite na ime zahtjeva kojeg želite izmjeniti. Idite na naslov **Outgoing messages**. Kliknite na strelicu kraj prve odlazne poruke tj. izvorna poruka u predmetu. Prikazati će se općenite informacije o poruci. Kliknite **Resend**.
+Za ponavljanje slanja predmeta odnosno pojedinačne poruke, idite na administracijsko sučelje, kliknite na **Requests**, zatim kliknite na ime predmeta kojeg želite izmjeniti. Idite na naslov **Outgoing messages**. Kliknite na strelicu kraj prve odlazne poruke tj. izvorna poruka u predmetu. Prikazati će se općenite informacije o poruci. Kliknite **Resend**.
 
-Za slanje predmeta nekoj drugoj pravnoj osobi, idite na administracijsko sučelje, kliknite na **Requests**, tada kliknite na ime zahtjeva kojeg želite izmjeniti. U **Request metadata** dijelu nalazi se redak koji pokazuje izvornog primatelja predmeta. Kliknite **move…** tipku koja se nalazi kraj naziva pravne osobe. Unesite **url_name** pravne osobe kojoj želite poslati predmet.
+Za slanje predmeta nekoj drugoj pravnoj osobi, idite na administracijsko sučelje, kliknite na **Requests**, zatim kliknite na ime predmeta kojeg želite izmjeniti. U **Request metadata** dijelu nalazi se redak koji pokazuje izvornog primatelja predmeta. Kliknite **move…** tipku koja se nalazi kraj naziva pravne osobe. Unesite **url_name** pravne osobe kojoj želite poslati predmet.
 
 > Korisnici, predmeti i pravne osobe svi imaju `url_name` (url nazive). Može se pronaći u metadata dijelu na njihovoj administracijskoj stranici. URL naziv čini zadnji dio URL-a njihove javne stranice. Znači, za predmet kojem je `url_name` "primjer_predmeta" javni URL biti će `/request/primjer_predmeta`.
 
@@ -60,37 +60,43 @@ Sada kliknite na tipku **Move request to authority**. Vidjeti ćete obavijest na
 
 # Skrivanje predmeta
 
-Hiding a request#
+Možete sakriti cijele predmete. Tipično, ovo ćete koristiti kada podnesak nije valjan (na primjer kada ne pripada pod zakonsku definiciju predmeta za vaš portal), ili kada sadrži elemente zabranjene zakonom (na primjer govor mržnje).
 
-You can hide an entire request. Typically you do this if it’s not a valid Freedom of Information request (for example, a request for personal information), or if it is vexatious.
+Idite u administracijsko sučelje, kliknite na **Requests**, zatim kliknite na naslov predmeta. Možete sakriti na dva načina: 
 
-Go to the admin interface, click on Requests, then click on the title of the request you want. You can hide it in one of two ways:
+- Sakrijte predmet i obavijestite podnositelja predmeta
+- Sakrijte predmet bez obaviještavanja podnositelja predmeta
 
-Hide the request and notify the requester
-Hide the request without notifying the requester
-Responses to a hidden request will be accepted in the normal way, but because they are added to the request’s page, they too will be hidden.
+Odgovori na sakriveni predmet biti će prigvaćeni uobičajeno, i oni će biti sakriveni kao i cijeli predmet.
 
-Hide the request and notify the requester#
-Scroll down to the Actions section of the request’s admin page. Choose one of the options next to Hide the request and notify the user:
+## Skrivanje predmeta i obaviještavanje podnositelja
 
-Not a valid FOI request
-A vexatious request
-Choosing one of these will reveal an email form. Customise the text of the email that will be sent to the user, letting them know what you’ve done. When you’re ready, click the Hide request button.
+Spustite se do *Actions* dijela na administracijskoj stranici predmeta. Izaberite od ponuđenih mogućnosti kraj **Hide the request and notify the user**:
 
-Hide the request without notifying the requester#
-As well as hiding the request from everyone, you can also use this method if you want to make the request only visible to the requester.
-In the Request metadata section of the request’s admin page, click the Edit metadata button. Change the Prominence value to one of these:
+- *Not a valid FOI request* (predmet nije valjan predmet pod nadležnim zakonom)
+- *A vexatious request* (protivan je pravilima korištenja stranice odnosno krši zakonske propise, npr. govor mržnje)
 
-requester_only: only the requester can view the request
-hidden: nobody can see the request, except administrators.
-If you want to hide the request, do not chooose backpage as the prominence. The backpage option stops the request appearing in lists and searches so that it is effectively only visible to anyone who has its URL — but it does not hide the request.
-When you’re ready, click the Save changes button at the bottom of the Edit metadata section. No email will be sent to the requester to notify them of what you’ve done.
+Izborom jedne od ovih mogućnosti prikazati će obrazac za email poruku. Po potrebi izmjenite tekst email poruke koji će biti poslan korisniku, obaviještavajući korisnika što ste učinili i s kojim razlogom. Kada ste gotovi, kliknite **Hide request** tipku.
 
-Deleting a request#
+## Skrivanje predmeta bez obaviještavanja podnositelja
 
-You can delete a request entirely. Typically, you only need to do this if someone has posted private information. If you delete a request, any responses that it has already received will be destroyed as well.
+> Osim skrivanja predmeta ovaj postupak možete koristiti ako želite da predmet bude vidljiv samo podnositelju.
 
-Deleting a request destroys it. There is no “undo” operation. If you're not sure you want to do this, perhaps you should hide the request instead.
-Go to the admin interface, click on Requests, then click on the title of the request you want to delete. Click the Edit metadata button. Click on the red Destroy request entirely button at the bottom of the page.
+Na administracijskoj stranici predmeta u dijelu *Request metadata*, kliknite na **Edit metadata** tipku. Promijenite *Prominence* (vidljivost) vrijednost u jednu od ponuđenih:
 
-Responses to a deleted request will be sent to the holding pen.
+- `requester_only` - samo će podnositelj moći vidjeti stranicu predmeta
+- `hidden` - nitko neće vidjeti stranicu predmeta, osim administratora.
+
+> Ako želite sakriti predmet, nemojte izabrati `backpage` kao vidljivost. `backpage` postavka skriva predmet sa stranica s listama i pretrage pa je ustvari predmet vidljiv svatkome tko ima URL tog predmeta ali ne zabranjuje pristup tom predmetu. 
+
+Kada ste gotovi, kliknite na **Save changes** tipku na dnu dijela *Edit metadata*. Podnositelju neće biti poslana nikakava obavijest u promjenama koje napravite na predmetu.
+
+# Brisanje predmeta
+
+Predmet možete obrisati u potpunosti. Tipično, ovo činite samo u izvanrednim slučajevima kada drugi postupci ne mogu riješiti problem. Ako obrišete zahtjev, svi odgovori koji su zaprimljeni za taj predmet biti će isto obrisani.
+
+> Brisanje predmeta ga u potpunosti uništava. Ne posotji povratka nakon ovog postupka. Ako niste sigurni da baš ovo želite učiniti, možda ipak trebate samo sakriti predmet.
+
+Idite na administracijsko sučelje, kliknite na **Requests**, zatim kliknite na ime predmeta kojeg želite izmjeniti. Kliknite na **Edit metadata** tipku. Kliknite na crvenu **Destroy request entirely** tipku na dnu stranice.
+
+Odgovori zaprimljeni za obrisani predmet biti će poslani u holding pen.
