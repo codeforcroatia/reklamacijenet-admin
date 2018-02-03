@@ -16,5 +16,5 @@ Dragi _______,
 hvala vam na prijavi! Ovo se ponekada dogodi ako e-mail adresa predmeta procuri. Ne brinite - vaša osobna email adresa je sigurna, ovdje se radi o jedinstvenoj adresi jednog specifičnog predmeta. Uklonili smo neželjenu poruku i zabranili dolazak novih odgovora po ovom predmetu, te neće više biti novih dolaznih poruka po ovom predmetu. Ako trebate slati povratnu poruku pravnoj osobi, učinite to tako da kreirate novi prigovor.
 
 Lijep pozdrav,
-[tvoje ime] - volonter na Reklamacije.net
+[tvoje ime] - volonter na {{ site.portal.name }}
 ```

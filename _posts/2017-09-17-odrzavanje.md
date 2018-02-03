@@ -77,7 +77,7 @@ Postoje tri načina na koja se mogu promijeniti podaci pravnih osoba:
 
 Mogućnost uploada može biti od velike koristi – posebno prilikom formiranja Alaveteli stranice – jer je čest slučaj da se podaci, poput kontakt podataka pravnih osoba, prikupljaju u tablicama. Mogućnost uploada čini jednostavnim inicijalan upload podataka na stranicu. Također omogućava ažuriranje podataka ukoliko se podaci promijene nakon što su uploadani. 
 
-Kako bi se podaci u tablici iskoristili za ažuriranje pravnih osoba na Reklamacije.net, potrebno ih je izvesti, tj. kliknuti na Export tablice u CSV formatu. Ovo je datoteka koju je kasnije moguće modificirati i uploadati.
+Kako bi se podaci u tablici iskoristili za ažuriranje pravnih osoba na {{ site.portal.name }}, potrebno ih je izvesti, tj. kliknuti na Export tablice u CSV formatu. Ovo je datoteka koju je kasnije moguće modificirati i uploadati.
 
 Prvi red CSV datoteke treba početi sa znakom # (znak indicira da ovaj red ne sadrži podatke) i mora sadržavati popis stupaca za podatke koji se nalaze u slijedećim redovima. Imena stupaca moraju:
 - biti u prvom redu
@@ -204,7 +204,7 @@ Skriveni predmeti mogu normalno zaprimiti odgovor, ali će odgovor također biti
 
 ### Brisanje predmeta
 
-Prigovor se može obrisati sa portala Reklamacije.net. Za detaljnije upute, pogledajte [brisanje predmeta][2]. 
+Prigovor se može obrisati sa portala {{ site.portal.name }}. Za detaljnije upute, pogledajte [brisanje predmeta][2]. 
 Odgovori na obrisane predmete će biti zaprimljeni u holding pen.
 
 ### Skrivanje primljene ili poslane poruke

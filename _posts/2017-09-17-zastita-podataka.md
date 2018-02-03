@@ -16,12 +16,12 @@ Kada korisnik zatraži uklanjanje osobnih podataka ili osjetljivih osobnih podat
 
 ```
 Dragi ________,
-obaviještavam vas da smo postupili sukladno vašem zahtjevu za uklanjanje vaših osobnih podataka s portala Reklamacije.net.
+obaviještavam vas da smo postupili sukladno vašem zahtjevu za uklanjanje vaših osobnih podataka s portala {{ site.portal.name }}.
 
-Portal Reklamacije.net prikuplja najnužnije osobne podatke potrebne za slanje predmeta pritužbe putem ovog internetskog servisa uz privolu korisnika. Korisnik može povući privolu koje je ranije dao za prikuplajnje osobnih podataka.
+Portal {{ site.portal.name }} prikuplja najnužnije osobne podatke potrebne za slanje predmeta pritužbe putem ovog internetskog servisa uz privolu korisnika. Korisnik može povući privolu koje je ranije dao za prikuplajnje osobnih podataka.
 
 Vaši osobni podaci su uklonjeni odnosno anonimizirani na portalu. Podaci potrebni za normalan rad portala nisu mjenjani te i dalje možete pristupiti s vašom e-mail adresom na portal.
 
 Lijep pozdrav,
-[tvoje ime], volonter na Reklamacije.net
+[tvoje ime], volonter na {{ site.portal.name  }}
 ```

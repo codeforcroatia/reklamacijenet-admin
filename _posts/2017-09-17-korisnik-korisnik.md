@@ -9,10 +9,10 @@ Ukoliko korisnik želi kontaktirati drugog korisnika, o tome ga je moguće obavi
 
 ```
 Dragi _______,
-možete kontaktirati korisnika ______ na način da prvo izradite korisnički račun na portalu Reklamacije.net te klikom na link "Poslati poruku [ime korisnika]" na slijedećoj poveznici: ___________
+možete kontaktirati korisnika ______ na način da prvo izradite korisnički račun na portalu {{ site.portal.name }} te klikom na link "Poslati poruku [ime korisnika]" na slijedećoj poveznici: ___________
 
 E-mail adrese korisnika ne dajemo drugim korisnicima radi zaštite osobnih podatka, ali vaša poruka će biti poslana korisniku putem e-maila, a ukoliko vam korisnik odgovori, to će vam omogućiti direktan kontakt s tim korisnikom.
 
 Lijep pozdrav,
-[tvoje ime], volonter na Reklamacije.net
+[tvoje ime], volonter na {{ site.portal.name }}
 ```

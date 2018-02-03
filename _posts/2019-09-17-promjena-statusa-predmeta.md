@@ -14,10 +14,10 @@ Ponekada druge osobe nakon što primjete da status nekog predmeta ne reflektira 
 
 ```
 Dragi ______,
-hvala vam na javljanju. Podnositelj prigovora određuje status prigovora temeljem svoje procjene. Ako podnositelj prigovora ne dodijeli satus prigovora unutar 30 dana, tada omogućavamo drugim korisnicima portala da to učine umjesto njega. Ukoliko pravna osoba smatra da je status prigovora neprikladno dodijeljen, možemo pregledati i dodijeliti prigovoru novi status.
+hvala vam na javljanju. Podnositelj određuje status predmeta temeljem svoje procjene. Ako podnositelj ne dodijeli satus predmetu unutar 30 dana, tada omogućavamo drugim korisnicima portala da to učine umjesto njega. Ukoliko pravna osoba smatra da je status predmeta neprikladno dodijeljen, možemo pregledati i dodijeliti predmetu novi status.
 
-Nakon što smo pregledati prigovor, klasificirali smo ga [status].
+Nakon što smo pregledati ovaj predmet, klasificirali smo ga kao [status].
 
 Lijep pozdrav,
-[tvoje ime], volonter na Reklamacije.net
+[tvoje ime], volonter na {{ site.portal.name }}
 ```

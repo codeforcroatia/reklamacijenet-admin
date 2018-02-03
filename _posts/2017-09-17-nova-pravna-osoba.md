@@ -17,6 +17,6 @@ Dragi, __________,
 hvala vam na prijedlogu za dodavanje nove pravne osobe: [naziv pravne osobe]. Dodan je na stranicu ovdje: [link pravne osobe]
 
 Lijep pozdrav,
-[tvoje ime], volonter na Reklamacije.net
+[tvoje ime], volonter na {{ site.portal.name }}
 
 ```

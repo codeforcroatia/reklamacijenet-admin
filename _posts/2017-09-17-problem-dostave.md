@@ -15,15 +15,15 @@ Kada primjetiš da neka pravna osoba ne odgovara na uzastopne poruke, potrebno j
 
 ```
 Poštovani,
-e-mail zapisi s našeg poslužitelja Reklamacije.net potvrđuju da je [naziv pravne osobe] zaprimilo e-mail [datum]. Zaprimljen je odgovor od e-mail poslužitelja ove pravne osobe u kojem je navedeno:
+e-mail zapisi s našeg poslužitelja {{ site.portal.name }} potvrđuju da je [naziv pravne osobe] zaprimilo e-mail [datum]. Zaprimljen je odgovor od e-mail poslužitelja ove pravne osobe u kojem je navedeno:
 "250 2.0.0 Message received OK" <[prepisati_iz_mail_loga_XXX] message>
 
 Cjelokupni zapisi s poslužitelja kopirani su u prilogu ove poruke - proslijedite poruku vašem informatičkom odjelu, mogu im biti od pomoći.
 
-Ako je poruka slučajno označena kao spam, predlažemo dodavanje domene reklamacije.net na vašu listu pouzdanih kontakata kako se to ne bi ponovno dogodilo u budućnosti.
+Ako je poruka slučajno označena kao spam, predlažemo dodavanje domene {{ site.portal.domain }} na vašu listu pouzdanih kontakata kako se to ne bi ponovno dogodilo u budućnosti.
 
 Također, ponovno smo poslali poruku.
 
 Lijep pozdrav,
-[tvoje ime], volonter na Reklamacije.net
+[tvoje ime], volonter na {{ site.portal.name }}
 ```

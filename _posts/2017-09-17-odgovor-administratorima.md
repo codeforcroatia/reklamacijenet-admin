@@ -11,9 +11,9 @@ Odgovori korisniku s detaljnim uputama kamo treba ići da napiše svoj odgovor p
 
 ```
 Dragi _______, 
-odgovor ste uputili timu volontera koji održavaju portal Reklamacije.net. 
+odgovor ste uputili timu volontera koji održavaju portal {{ site.portal.name }}. 
 Vaš odgovor možete poslati pravnoj osobi klikom na link iz e-maila, te zatim na link "Napisati odgovor" koji se nalazi ispod predmeta na stranici iz linka.
 
 Lijep pozdrav,
-[tvoje ime] - volonter na Reklamacije.net
+[tvoje ime] - volonter na {{ site.portal.name }}
 ```

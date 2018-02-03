@@ -18,5 +18,5 @@ Dragi ______,
 hvala vam na prijedlogu za ažuriranje e-mail adrese. E-mail adresa [naziv pravne osobe] je ažurirana te sada glasi: [nova e-mail adresa]. 
 
 Lijep pozdrav,
-[tvoje ime], volonter na Reklamacije.net
+[tvoje ime], volonter na {{ site.portal.name }}
 ```

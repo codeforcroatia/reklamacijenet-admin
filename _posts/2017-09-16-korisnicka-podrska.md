@@ -75,28 +75,28 @@ Odgovori korisniku s detaljnim uputama kamo treba ići da napiše svoj odgovor p
 
 ```
 Dragi _______, 
-odgovor ste uputili timu volontera koji održavaju portal Reklamacije.net. 
+odgovor ste uputili timu volontera koji održavaju portal {{ site.portal.name }}. 
 Vaš odgovor možete poslati pravnoj osobi klikom na link iz emaila, te zatim na link "Napisati odgovor" koji se nalazi ispod predmeta.
 
 Lijep pozdrav,
-[tvoje ime] - volonter na Reklamacije.net
+[tvoje ime] - volonter na {{ site.portal.name }}
 ```
 
 # Korisnik treba savjet
 
 Dva najučestalija primjera su:
 
-* korisnik nije siguran kome poslati reklamaciju
-* želi znati najbolji način da sastavi poruku reklamacije
+* korisnik nije siguran kome poslati predmet
+* želi znati najbolji način da sastavi poruku predmeta
 
 **Primjer odgovora korisniku**
 
 ```
 Dragi _______, 
-savjetujem vam da pošaljete reklamaciju "XZY" pravnoj osobi jer je "Caffe XYZ" brand dio te pravne osobe.
+savjetujem vam da pošaljete predmet "XZY" pravnoj osobi jer je "Caffe XYZ" brand dio te pravne osobe.
 
 Lijep pozdrav,
-[tvoje ime] - volonter na Reklamacije.net
+[tvoje ime] - volonter na {{ site.portal.name }}
 ```
 
 # Korisnik treba pomoć
